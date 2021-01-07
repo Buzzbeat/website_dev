@@ -34,7 +34,7 @@
       <!-- Module Navigation-->
       <div class="full-width nav-bar sticky-bar transparent-nav">
         <div class="wrapper">
-          <nav class="main-nav">
+          <nav class="main-nav desktop">
               <ul>
                   <li><a href="#"><img src="img/logo-dark.svg"></a></li>
                   <li><a href="#">Insights</a></li>
@@ -43,6 +43,14 @@
                   <li><a href="#">Sobre</a></li>
                   <li><a class="btn" href="">Contactos</a></li>
               </ul>
+          </nav>
+          <nav class="main-nav-mobile mobile">
+            <a href="#"><img src="img/logo-dark.svg"></a>
+            <div class="menu" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
           </nav>
         </div>
       </div>
@@ -55,11 +63,12 @@
         <div class="slider" id="slider">
           <div class="holder">
             <div class="slide" id="slide-0">
+              <div class="slide-container">
               <div class="wrapper">
-                <div class="slide-container">
+                
                   <div class="row">
-                    <div class="col-lg-1">
-                      <span>01/03</span>
+                    <div class="col-lg-1 col-md-12 col-sm-12">
+                      <span><b>01</b>/03</span>
                     </div>
                     <div class="col-lg-5">
                       <span class="subtitle">AGÊNCIA DE ESTRATÉGIA DIGITAL</span>
@@ -69,7 +78,7 @@
                     <div class="col-lg-1"></div>
                     <div class="col-lg-5"></div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 desktop">
                     <div class="social-media"> 
                       <span>SOMOS BUZZBEAT</span>
                       <div class="white-line"></div>
@@ -78,12 +87,11 @@
                       <a href="https://www.linkedin.com/company/buzzbeat/" target="_blank"><img src="img/linkedin-logo.svg"></a>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 desktop">
 
                   </div>
                 </div>
               </div>
-              
             </div>
             <!--
             <div class="slide" id="slide-1"></div>
@@ -97,10 +105,15 @@
           <a href="#slide-2">Slide 2</a> 
         </nav>
     </div>
+    <div class="scroll-guide desktop">
+      <div class="scroll-down">
+        <img src="img/arrow-scroll-down.svg"><span>SCROLL</span>
+      </div>
+    </div>
      <!-- END Module Main Slider -->
   </section>
 
-  <section class="offset-project-cta">
+  <section class="offset-project-cta desktop">
     <div class="wrapper">
       <div class="row">
         <div class="col-lg-7 col-md-7 col-sm-12">
@@ -135,7 +148,7 @@
     <div class="row">
       <div class="col-lg-2 col-md-2"></div>
 
-      <div class="col-lg-10 col-md-10">
+      <div class="col-lg-10 col-md-10 desktop">
         <div class="carousel-wrapper spacer">
             <div class="owl-carousel owl-theme right-slider">
               <div class="item"><a href=""><img src="img/01-carousel-img.jpg"><span class="service-title">Criatividade</span></a></div>
@@ -183,7 +196,7 @@
     <div class="wrapper">
       
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-12 col-sm-12">
           <span class="subtitle">INDÚSTRIAS</span>
           <h2>Trabalhamos projetos &<br> indústrias nos mais<br> variados setores</h2>
           <a class="btn-blue-ball btn-light" href=""><div class="btn-ball"><img class="btn-arrow" src="img/arrow-right.svg"></div><span>Todas as Indústrias</span></a>
@@ -192,11 +205,11 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12">
+        <div class="col-lg-5 col-md-5 col-sm-5">
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-12">
+        <div class="col-lg-7 col-md-12 col-sm-12 spacer">
           <div class="row">
-            <div class="col col-lg-6 col-md-6 col-sm-12 img-grid">
+            <div class="col-lg-6 col-md-6 col-sm-6 img-grid">
               <a href="">
                 <div class="img-container">
                   <img class="img-fluid" src="img/01-industries-img.jpg">
@@ -210,7 +223,7 @@
                 </div>
               </a>
             </div>
-            <div class="col col-lg-6 col-md-6 col-sm-12 img-grid top-offset">
+            <div class="col-lg-6 col-md-6 col-sm-6 img-grid top-offset">
               <a href="">
                 <div class="img-container">
                   <img class="img-fluid" src="img/02-industries-img.jpg">
@@ -268,21 +281,23 @@
     
     <div class="wrapper">
       <div class="row articles">
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <a href="">
             <span class="subtitle">ARTIGO 01 SET 2020</span><br>
             <h3 class="article-title">Título do artigo nº 01</h3>
             <span class="article-short">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br>
           </a>
+            <hr class="mobile article-spacer">
         </div>
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <a href="">
             <span class="subtitle">ARTIGO 01 SET 2020</span><br>
             <h3 class="article-title">Título do artigo nº 02</h3>
             <span class="article-short">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br>
           </a>
+            <hr class="mobile article-spacer">
         </div>
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <a href="">
             <span class="subtitle">ARTIGO 01 SET 2020</span><br>
             <h3 class="article-title">Título do artigo nº 03</h3>
@@ -319,14 +334,14 @@
     <section class="footer-1">
       <div class="wrapper">
         <div class="row align-center">
-          <div class="col-lg-5 col-md-5">
+          <div class="col-lg-5 col-md-5 col-sm-12">
             <span class="subtitle">Onde estamos</span>
             <p class="address">Tagus Park, Edifício Núcleo Central 100,<br>Salas 342, 344, 346<br>2740-122 Porto Salvo, Portugal</p>
             <span class="subtitle">fale connosco</span><br>
             <p><a href="tel:+351211383266">(+351) 211 383 266</a><br>
             <a href="mailto:info@buzzbeat.pt">info@buzzbeat.pt</a></p>
           </div>
-          <div class="col-lg-7 col-md-7">
+          <div class="col-lg-7 col-md-7 col-sm-12">
             <div class="footer-form">
               <span class="subtitle">FALE CONNOSCO</span>
               <h2>Vamos tranformar<br>o seu negócio?</h2>
