@@ -1694,10 +1694,18 @@ p{
    Slider Content
    ========================================================================== */
 
-.main-block{
-  align-items: center;
-  height:100vh;
+.slide-container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
+
+.slide-container .social-media{
+  margin-top:160px;
+}
+
+
 
 /* ==========================================================================
    Video Banner
@@ -1716,10 +1724,11 @@ p{
   z-index:1;
 }
 
-.offset{
-  position: relative;
+.offset-project-cta{
+  position: absolute;
+  bottom:-75px;
   z-index: 2;
-  margin-top:-20%;
+  width: 100%;
 } 
 
 .section-1{
