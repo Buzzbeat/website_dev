@@ -2202,6 +2202,10 @@ footer a{
   margin-top: -29%;
 }
 
+.panel{
+  display:none;
+}
+
 .accordion{
   display: flex;
   flex-direction: row;
@@ -2214,6 +2218,7 @@ footer a{
   border-bottom:0;
   padding:20px 60px;
   cursor: pointer;
+  transition: 500ms all ease;
 }
 
 .circle-plus{
@@ -2224,6 +2229,7 @@ footer a{
   background: #1F1F1F;
   border:1px solid #1F1F1F;
   border-radius: 50%;
+  transition: 500ms all ease;
 }
 
 .circle-plus img{
@@ -2232,6 +2238,30 @@ footer a{
   left:50%;
   transform: translate(-50% , -50%);
 }
+
+.accordion:hover .circle-plus{
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.accordion:hover .circle-plus img{
+  filter: invert(1);
+}
+
+.accordion-blue{
+  padding:100px 0;
+  background-color:#00d9d0;
+  color:#fff;
+}
+
+.accordion-blue strong{
+  font-size:22px;
+}
+
+.offset-panel-blue{
+  margin-top:-30%;
+}
+
 
 
 
