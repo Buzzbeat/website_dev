@@ -1654,21 +1654,19 @@ p{
 .slide:before {
   content: "";
 }
-.slider-nav {
-  text-align: center;
-  margin: 10px 0 0 0;
-}
+
 .slider-nav a {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: #ddd;
+  width: 33.3333333333%;
+  height: 1px;
+  display: block;
+  float:left;
+  background: #fff;
   overflow: hidden;
-  text-indent: -9999px;
-  border-radius: 50%;
 }
 .slider-nav a.active {
-  background: #999;
+  margin-top:-3px;
+  height: 3px;
+  background: #fff;
 }
 
 .project-cta{
@@ -1676,6 +1674,7 @@ p{
   min-height:313px;
   padding:60px;
   color:#fff;
+  border-top: 1px solid #fff;
 }
 
 .project-cta span{
@@ -1697,6 +1696,27 @@ p{
 .left-slider{
   transform:translateX(-15%);
   margin-top:35px;
+}
+
+.owl-dots{
+  margin-top:85px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  height:3px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  width: 138px;
+  height: 1px;
+  background: #00D9D0;
+  display: block;
+  float:left;
+  transition: opacity .2s ease;
+}
+
+:focus{
+  outline: none;
 }
 
 /* remover navegação dos sliders */
@@ -1763,6 +1783,10 @@ p{
 
 .homepage.section-1{
   padding:150px 0;
+}
+
+.homepage.section-1 .owl-dot{
+  display:none;
 }
 
 .homepage.section-2{
@@ -2469,6 +2493,23 @@ footer a{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.img-label{
+  position: relative;
+}
+
+.blue-label{
+  position:absolute;
+  top:40px;
+}
+
+.blue-label:nth-child(odd){
+  right:0;
+}
+
+.blue-label:nth-child(even){
+  left: 0;
 }
 
 
