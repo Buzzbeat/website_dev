@@ -2352,6 +2352,7 @@ footer a{
   padding:15px 60px;
   cursor: pointer;
   transition: 500ms all ease;
+  text-align: left;
 }
 
 .circle-plus{
@@ -2510,6 +2511,12 @@ footer a{
   background-color: #fff;
   margin: 6px 0;
   transition: 0.4s;
+}
+
+.main-nav-mobile .menu.menu-light .bar1,
+.main-nav-mobile .menu.menu-light .bar2,
+.main-nav-mobile .menu.menu-light .bar3{
+  background-color: #000;
 }
 
 .change .bar1 {
@@ -2732,7 +2739,8 @@ footer a{
     margin-left: 25px;
     margin-bottom: 25px;
   }
-  .services.head-section .blue-square{
+  .services.head-section .blue-square,
+  .industry.head-section .blue-square{
     margin-top:0;
     margin-left:-20px;
     margin-right:-20px;
@@ -2742,11 +2750,109 @@ footer a{
   .services.section-2{
     padding:25px 0;
   }
+  .img-label{
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom:35px;
+  }
+  .industry.section-1{
+    padding-top:25px;
+    padding-bottom:50px;
+  }
+  .industry.section-2{
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .accordion{
+    padding: 15px 20px;
+  }
+  .offset-panel-blue{
+    margin-top:0;
+  }
+  .accordion-blue{
+    padding: 60px 20px;
+    background-color: #00d9d0;
+    color: #fff;
+    width: unset;
+  }
+  .accordion-blue .btn-blue-ball{
+    margin-top:35px;
+  }
+  .industry.section-3{
+    margin-top:0;
+    padding:80px 0;
+  }
+  .industry.section-3 .btn-blue-ball{
+    margin-top:45px;
+  }
+  .contact-blue{
+    margin-top:0;
+  }
+  .contact-blue .blue-board{
+    margin-left:-20px;
+    margin-right:-20px;
+    padding:60px 20px!important
+  }
+  .contact-img{
+    margin-top:0;
+  }
+  .contact-blue .padding-left p{
+    padding-top:25px;
+  }
+  .contact-btn{
+    margin-bottom:45px;
+  }
+  .blog.section-1 .primary-article{
+    margin-top:0;
+  }
+  .blog.section-1 .banner-img{
+    margin-top:0;
+  }
+  .article-info {
+    padding: 15px 0px 35px;
+  }
+  .blog.section-3{
+    padding-top:90px;
+  }
+  .btn-container .btn-blue-ball.btn-light{
+    width:calc(100% - 40px);
+  }
+  .blogpost.head-section{
+    padding-top:40px;
+  }
+  .blogpost.section-3{
+    padding: 75px 0;
+  }
+  .industry-banner{
+    margin-left: -20px;
+    margin-right: -20px;
+    padding:20px;
+  }
+  .industry-post.section-1{
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+  .industry-post.section-2 .blue-square{
+    margin-top:0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 65px 20px;
+  }
+  .industry-post.section-3{
+    margin-top:0;
+    padding:80px 0;
+  }
+  .industry-post.section-3 .btn-blue-ball{
+    margin-top:45px;
+  }
 }
 
 @media (max-width: 576px) {
   h1 br, h2 br, h3 br, h4 br{
     display:none;
+  }
+  .industry-banner{
+    min-height:240px;
   }
 }
 
