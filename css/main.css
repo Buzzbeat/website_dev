@@ -1431,7 +1431,11 @@ p{
    Main Nav
    ========================================================================== */
 
-  
+.absolute-bar{
+  position: absolute;
+  z-index: 99;
+}
+
 .sticky-bar{
   position: fixed;
   top:0;
@@ -1440,10 +1444,13 @@ p{
 
 .nav-bar{
   height:75px;
+  transition: 500ms all ease;
 }
 
 .light-nav{
+  height:75px;
   background-color:#fff;
+  transition: 500ms all ease;
 }
 
 .light-nav .main-nav ul li a{
@@ -1465,6 +1472,13 @@ p{
 .transparent-nav .main-nav ul li a,
 .dark-nav .main-nav ul li a{
   color:#fff;
+  transition: 500ms all ease;
+}
+
+.transparent-nav .main-nav ul li a:hover,
+.dark-nav .main-nav ul li a:hover,
+.light-nav .main-nav ul li a:hover{
+  text-decoration: underline;
 }
 
 .main-nav{
@@ -1491,7 +1505,7 @@ p{
   margin-left:0;
 }
 
-.nav-bar a{
+.nav-bar a, .light-nav a{
   font-size:14px;
   text-transform:uppercase;
   text-decoration: none;
@@ -1877,6 +1891,19 @@ p{
   padding-bottom:100px;
   background-color:#0F0F0F;
   color:#fff;
+}
+
+.industry.section-3 p{
+  color:#fff;
+  text-decoration: none;
+}
+
+.industry.section-3 .img-label-container{
+  position: relative;
+}
+
+.industry.section-3 .owl-carousel .owl-dots.disabled{
+  display:block;
 }
 
 .contact.section-2{
@@ -2502,13 +2529,23 @@ footer a{
 .blue-label{
   position:absolute;
   top:40px;
+  background-color: #00D9D0;
+  color:#fff;
+  padding: 10px 15px;
+  width: 240px;
 }
 
-.blue-label:nth-child(odd){
+.blue-label span{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.blue-label{
   right:0;
 }
 
-.blue-label:nth-child(even){
+.go-right .blue-label{
   left: 0;
 }
 

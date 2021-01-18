@@ -1,3 +1,21 @@
+$(window).scroll(function(){
+  var sticky = $('.nav-bar'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 999) sticky.addClass('sticky-bar dark-nav').removeClass('transparent-nav');
+  else sticky.removeClass('sticky-bar dark-nav').addClass('transparent-nav');
+});
+
+
+$(window).scroll(function(){
+  var sticky = $('.light-nav'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 999) sticky.addClass('sticky-bar');
+  else sticky.removeClass('sticky-bar');
+});
+
+/*
 var slider = {
   
     // Not sure if keeping element collections like this
@@ -58,7 +76,7 @@ var slider = {
   };
   
   slider.init();
-
+*/
 
   /* Owl Carousel.js */
 
