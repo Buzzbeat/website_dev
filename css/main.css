@@ -1512,6 +1512,82 @@ p{
 }
 
 /* ==========================================================================
+   Main Nav Mobile
+   ========================================================================== */
+.main-nav-mobile{
+  z-index:99;
+  background-color:#fff;
+}
+
+.nav-mobile{
+  position: fixed;
+  top:65px;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100vh;
+  width: calc(100% - 40px);
+  background-color:#fff;
+  padding:50px 20px; 
+  display:none;
+  transition:500ms all ease; 
+}
+
+.nav-mobile ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-mobile ul li{
+  margin-top:10px;
+  margin-bottom:10px; 
+}
+
+.nav-mobile ul li a{
+  font-size:32px;
+  color:#1F1F1F;
+  text-decoration: none;
+}
+
+.nav-mobile-contact{
+  margin-top:50px;
+}
+
+.nav-mobile .subtitle{
+  margin-top:50px;
+  color:#999;
+  font-size:11px;
+}
+
+.nav-mobile .social-media{
+  color:#1F1F1F;
+  white-space: nowrap;
+}
+
+.nav-mobile .social-media .white-line{
+  background-color:#1F1F1F;
+  width:100%;
+  margin-right: 0;
+}
+
+.nav-mobile .social-links{
+  margin-top:20px;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.nav-mobile .social-links a{
+  filter: invert(1) brightness(100);
+  margin-left:25px;
+}
+
+.nav-mobile .social{
+
+}
+
+
+/* ==========================================================================
    Carousel
    ========================================================================== */
 
@@ -2630,6 +2706,16 @@ footer a{
   }
   p{
     font-size:16px;
+  }
+  .nav-bar{
+    background-color:#fff;
+    position: fixed;
+    height:65px;
+  }
+  .nav-bar .menu .bar1,
+  .nav-bar .menu .bar2,
+  .nav-bar .menu .bar3{
+    background-color:#383838;
   }
   .wrapper, .larger-wrapper{
     padding:0 20px;

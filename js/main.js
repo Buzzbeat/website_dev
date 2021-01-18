@@ -1,3 +1,7 @@
+$(".menu").click(function(){
+  $(".nav-mobile").toggle();
+});
+
 $(window).scroll(function(){
   var sticky = $('.nav-bar'),
       scroll = $(window).scrollTop();
