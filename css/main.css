@@ -1635,6 +1635,65 @@ p{
   text-decoration:none!important;
 }
 
+.btn-blue-ball{
+  position: relative;
+  padding: 10px 45px;
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 500ms all ease;
+}
+
+.btnball{
+  position: absolute;
+  left: 0;
+  width:42px;
+  height:42px;
+  border-radius: 20px;
+  background-color:#00d9d0;
+  margin-right:20px;
+  transition: 500ms all ease;
+}
+
+.btnball-white{
+  background-color:#fff;
+}
+
+.btn-img{
+  position: absolute;
+  top:50%;
+  left:13px;
+  transform:translateY(-50%);
+  transition: 500ms all ease;
+}
+
+.btn-blue-ball span{
+  z-index: 2;
+  margin-top: 10px;
+  padding: 0 15px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-blue-ball:hover .btnball{
+  width: 100%;
+  filter: drop-shadow(0px 0px 10px #00D9D0);
+}
+
+.btn-blue-ball:hover .btn-img{
+  left:calc(100% - 31px);
+}
+
+.btn-blue-ball:hover{
+  color:#fff;
+}
+
+.blue-ball-inverted:hover{
+  color:#00d9d0;
+}
+
 .btn-light{
   color:#1F1F1F;  
 }
@@ -1643,65 +1702,35 @@ p{
   color:#fff;
 }
 
-.btn-blue-ball{
-  display:flex;
-  font-weight:600;
-  font-size:16px;
-  align-items: center;
-  text-decoration: none;
-  transition: 500ms color ease;
-}
-
-.btn-blue-ball span{
-  position: absolute;
-  margin-left:62px;
-}
-
-.btn-ball{
-  position: relative;
+.btn-send{
   width:42px;
   height:42px;
+  background-color:#fff;
   border-radius: 20px;
-  background-color:#00D9D0;
-  transition: 500ms width ease;
-}
-
-.btn-ball-white{
-  background-color:#fff!important;
-}
-
-.btn-blue-ball:hover .btn-ball{
-  width:216px;
-  border-radius: 20px;
-  filter: drop-shadow(0px 0px 10px #00D9D0);
-}
-
-.btn-blue-ball:hover{
-  color:#fff;
-}
-
-.btn-white-ball:hover{
-  color:#00D9D0!important;
-}
-
-.btn-arrow{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50% , -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition:500ms all ease;
 }
 
-.btn-blue-ball:hover .btn-arrow,
-.btn-blue-ball:visited .btn-arrow{
-  left:85%;
+.btn-send:hover{
+  filter: drop-shadow(0px 0px 10px #00D9D0);
 }
 
-.btn-blue-ball:visited .btn-ball{
-  width:216px;
+.btn-go{
+  width:42px;
+  height:42px;
+  background-color:#00D9D0;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms all ease;
 }
 
+.btn-go:hover{
+  filter: drop-shadow(0px 0px 10px #00D9D0);
+}
 
 
 /* ==========================================================================
@@ -1985,7 +2014,8 @@ p{
   text-decoration: none;
 }
 
-.industry.section-3 .img-label-container{
+.industry.section-3 .img-label-container,
+.about.section-3 .img-label-container{
   position: relative;
 }
 
@@ -2599,6 +2629,10 @@ footer a{
   margin-bottom:80px;
 }
 
+.btn-container .btn-img{
+  left: 17px;
+}
+
 .industry-banner{
   min-height: 355px;
   background-image:url(../img/industry-banner.jpg);
@@ -2937,6 +2971,9 @@ footer a{
   .services.section-2{
     padding:25px 0;
   }
+  .services.section-3 .btn-blue-ball{
+    margin-top:30px;
+  }
   .img-label{
     margin-left: -20px;
     margin-right: -20px;
@@ -3049,6 +3086,12 @@ footer a{
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
+  }
+  .btnball{
+    display:none;
+  }
+  .btn-blue-ball{
+    display:flex;
   }
 }
 
