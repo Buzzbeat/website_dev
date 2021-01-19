@@ -2,6 +2,22 @@ $(".menu").click(function(){
   $(".nav-mobile").toggle();
 });
 
+var clicked = "false";
+  
+  $('.menu').click(function(e) {
+    e.preventDefault();
+    var overflowState = 'auto'
+
+    if (clicked == "false") {
+    overflowState = 'hidden';
+    clicked = "true";
+    } else {
+    overflowState = 'auto';
+    clicked = "false";
+    }
+    $('html, body').css('overflow', overflowState);
+});
+
 $(window).scroll(function(){
   var sticky = $('.nav-bar'),
       scroll = $(window).scrollTop();
@@ -18,6 +34,7 @@ $(window).scroll(function(){
   if (scroll >= 999) sticky.addClass('sticky-bar');
   else sticky.removeClass('sticky-bar');
 });
+
 
 /*
 var slider = {
