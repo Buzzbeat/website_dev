@@ -152,6 +152,16 @@ p{
   padding:0 15px;
 }
 
+.service-wrapper{
+  max-width: 100vw;
+  padding-right:calc((100vw - 1200px) / 2);
+}
+
+.service-wrapper.odd{
+  padding-right:0;
+  padding-left: calc((100vw - 1200px) / 2);
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -1973,6 +1983,10 @@ p{
   padding:140px 0;
 }
 
+.about.section-3 p{
+  color:#fff;
+}
+
 .services.section-1{
   padding-bottom:30px;
 }
@@ -2072,6 +2086,10 @@ p{
   color:#fff;
 }
 
+.blog.section-3 p{
+  color:#fff;
+}
+
 .blogpost.head-section{
   padding-top:80px;
   padding-bottom:0;
@@ -2085,11 +2103,15 @@ p{
   padding-bottom:125px;
 }
 
-.blogpost.section-2 .subtitle{
-  letter-spacing: 0;
+.post-data{
   line-height: 30px;
   color: #999;
   margin-top: 1em;
+  font-size: 14px;
+}
+
+.post-data .date{
+  text-transform: uppercase;
 }
 
 .blogpost.section-2 .social{
@@ -2113,6 +2135,10 @@ p{
 .blogpost.section-3{
   padding:130px 0;
   background-color:#0F0F0F;
+  color:#fff;
+}
+
+.blogpost.section-3 p{
   color:#fff;
 }
 
@@ -2502,6 +2528,10 @@ footer a{
 }
 
 .go-right{
+  order:3;
+}
+
+.go-center{
   order:2;
 }
 
@@ -2515,6 +2545,15 @@ footer a{
 
 .padding-left{
   padding-left:20px;
+}
+
+.img-blue{
+  padding-right:50px;
+}
+
+.img-blue.odd{
+  padding-right:0;
+  padding-left:50px;
 }
 
 .img-blue::after{
@@ -2547,6 +2586,9 @@ footer a{
 }
 
 .accordion{
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2662,7 +2704,7 @@ footer a{
 }
 
 .article-info{
-  padding:15px 50px 50px;
+  padding:15px 0;
 }
 
 .article-info .subtitle{
@@ -2821,7 +2863,7 @@ footer a{
   .nav-bar .menu .bar3{
     background-color:#383838;
   }
-  .wrapper, .larger-wrapper{
+  .wrapper, .larger-wrapper, .service-wrapper, .service-wrapper.odd{
     padding:0 20px;
   }
   .slide .btn-blue-ball{
@@ -3006,6 +3048,9 @@ footer a{
     width: 90%;
     margin-left: 25px;
     margin-bottom: 25px;
+  }
+  .img-blue, .img-blue.odd{
+    padding:0;
   }
   .services.head-section .blue-square,
   .industry.head-section .blue-square{
