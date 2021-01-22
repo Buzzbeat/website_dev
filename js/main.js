@@ -145,12 +145,12 @@ for (i = 0; i < acc.length; i++) {
 
 /* animações scrollama */
 
-var scroller = scrollama();
+const scroller = scrollama();
 
 scroller
   .setup({
     step: '.animista',
-    offset: 0.85
+    offset: 0.75
   })
   .onStepEnter(function(response) {
     response.element.classList.add('appear');
