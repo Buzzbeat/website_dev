@@ -142,3 +142,19 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+/* animações scrollama */
+
+var scroller = scrollama();
+
+scroller
+  .setup({
+    step: '.animista',
+    offset: 0.85
+  })
+  .onStepEnter(function(response) {
+    response.element.classList.add('appear');
+    console.log();
+  });
+
+window.addEventListener('resize', scroller.resize);

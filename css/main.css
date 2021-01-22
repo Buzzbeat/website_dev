@@ -3251,6 +3251,81 @@ footer a{
   }
 }
 
+/* ==========================================================================
+   Animations - homepage
+   ========================================================================== */
+
+.animista [class*="anim-delay-"] {
+    opacity: 0;
+ }
+ 
+ .animista.appear.fade-in-bottom [class*="anim-delay-"] {
+    animation-name: fade-in-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.anim-delay-1 { animation-delay: 0.1s; }
+.anim-delay-2 { animation-delay: 0.2s; }
+.anim-delay-3 { animation-delay: 0.3s; }
+.anim-delay-4 { animation-delay: 0.4s; }
+.anim-delay-5 { animation-delay: 0.5s; }
+.anim-delay-6 { animation-delay: 0.6s; }
+.anim-delay-7 { animation-delay: 0.7s; }
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* ==========================================================================
+   Animations - sobre
+   ========================================================================== */
+
+/* ==========================================================================
+   Animations - servicos
+   ========================================================================== */
+
+/* ==========================================================================
+   Animations - industrias
+   ========================================================================== */  
+
+/* ==========================================================================
+   Animations - contactos
+   ========================================================================== */
+
+/* ==========================================================================
+   Animations - blog
+   ========================================================================== */
+   
+/* ==========================================================================
+   Animations - blogpost
+   ========================================================================== */
+   
+/* ==========================================================================
+   Animations - industria post
+   ========================================================================== */ 
+
 
 /* ==========================================================================
    Helper classes
