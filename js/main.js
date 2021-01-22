@@ -102,8 +102,9 @@ var slider = {
   /* Owl Carousel.js */
 
   $('.owl-carousel').owlCarousel({
-    items:3,
-    loop:true,
+    rtl:false,
+    items:4,
+    loop:false,
     margin:70,
     autoplay:true,
     autoplayTimeout:1000,
@@ -114,10 +115,10 @@ var slider = {
             items:1
         },
         768:{
-            items:2
+            items:3
         },
         1000:{
-            items:3
+            items:4
         }
     }
 });

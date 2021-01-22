@@ -1842,6 +1842,9 @@ p{
 }
 
 .owl-dots{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
   margin-top:85px;
 }
 
@@ -1917,15 +1920,6 @@ p{
 
 .video-banner-wrap video[poster]{
   object-fit: cover;
-}
-
-.play-btn{
-  position: absolute;
-  right:215px;
-  top:50%;
-  transform:translateY(-50%);
-  width: 90px;
-  height: 90px;
 }
 
 .video-banner-wrap:hover .play-btn{
