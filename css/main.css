@@ -2321,9 +2321,11 @@ footer a{
   text-decoration: underline;
 }
 
+/*
 .footer-1 a:first-child{
   margin-top:50px;
 }
+*/
 
 .footer-form .subtitle{
   color:#fff;
@@ -2740,6 +2742,7 @@ footer a{
 
 .blue-board p{
   margin:35px 0;
+  color:#fff;
 }
 
 .blue-board a{
@@ -3252,13 +3255,17 @@ footer a{
 }
 
 /* ==========================================================================
-   Animations - homepage
+   Animations
    ========================================================================== */
+
+h1 span, h2 span, h3 span, p span{
+  display: inline-flex;
+}
 
 .animista [class*="anim-delay-"] {
     opacity: 0;
-    display: inline-flex;
  }
+
 .animista.appear [class*="anim-delay-"] {
     animation-duration: 0.75s;
     animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
@@ -3267,6 +3274,55 @@ footer a{
   .animista.appear.fade-in-bottom [class*="anim-delay-"] {
     animation-name: fade-in-bottom;
  }
+
+ .animista.appear .anim-delay-0-1 {
+  animation-delay: 200ms;
+}
+.animista.appear .anim-delay-0-2 {
+  animation-delay: 250ms;
+}
+.animista.appear .anim-delay-0-3 {
+  animation-delay: 300ms;
+}
+.animista.appear .anim-delay-0-4 {
+  animation-delay: 350ms;
+}
+.animista.appear .anim-delay-0-5 {
+  animation-delay: 400ms;
+}
+.animista.appear .anim-delay-0-6 {
+  animation-delay: 450ms;
+}
+.animista.appear .anim-delay-0-7 {
+  animation-delay: 500ms;
+}
+.animista.appear .anim-delay-0-8 {
+animation-delay: 550ms;
+}
+.animista.appear .anim-delay-0-9 {
+animation-delay: 600ms;
+}
+.animista.appear .anim-delay-0-10 {
+animation-delay: 650ms;
+}
+.animista.appear .anim-delay-0-11 {
+animation-delay: 700ms;
+}
+.animista.appear .anim-delay-0-12 {
+animation-delay: 750ms;
+}
+.animista.appear .anim-delay-0-13 {
+animation-delay: 800ms;
+}
+.animista.appear .anim-delay-0-14 {
+animation-delay: 850ms;
+}
+.animista.appear .anim-delay-0-15 {
+animation-delay: 900ms;
+}
+
+
+
   .animista.appear .anim-delay-1 {
     animation-delay: 200ms;
  }
@@ -3399,37 +3455,36 @@ footer a{
   }
 }
 
+.animista.appear.slide-in-right [class*="anim-delay-"]{
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
+ @-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-
-
-/* ==========================================================================
-   Animations - sobre
-   ========================================================================== */
-
-/* ==========================================================================
-   Animations - servicos
-   ========================================================================== */
-
-/* ==========================================================================
-   Animations - industrias
-   ========================================================================== */  
-
-/* ==========================================================================
-   Animations - contactos
-   ========================================================================== */
-
-/* ==========================================================================
-   Animations - blog
-   ========================================================================== */
-   
-/* ==========================================================================
-   Animations - blogpost
-   ========================================================================== */
-   
-/* ==========================================================================
-   Animations - industria post
-   ========================================================================== */ 
 
 
 /* ==========================================================================
