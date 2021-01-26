@@ -16,6 +16,7 @@ var clicked = "false";
     clicked = "false";
     }
     $('html, body').css('overflow', overflowState);
+    $('.nav-bar').addClass('light-nav').removeClass('dark-nav');
 });
 
 $(window).scroll(function(){
