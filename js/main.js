@@ -23,7 +23,7 @@ $(window).scroll(function(){
       scroll = $(window).scrollTop();
 
   if (scroll >= 999) sticky.addClass('sticky-bar light-nav').removeClass('transparent-nav');
-  else sticky.removeClass('sticky-bar light-nav').addClass('transparent-nav');
+  else sticky.removeClass('sticky-bar light-nav');
 });
 
 
@@ -164,7 +164,7 @@ window.addEventListener('resize', scroller.resize);
 
 function scrollFn() {
 
-  var targetOffset = $(".anchor-point").offset().top - 999;
+  var targetOffset = $(".anchor-point").offset().top - 900;
   var w = $(window).scrollTop();
 
   if (w > targetOffset) {

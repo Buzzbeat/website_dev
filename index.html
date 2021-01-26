@@ -175,62 +175,62 @@
       </div>
     </div>
 
-    <!-- Module Carousel -->
-    <style>
-      .scroll-wrapper .item {
-        max-width: 400px;
-        display: inline-block;
-        position: relative;
-        margin-right: 72px;
-      }
-
-      .scroll-wrapper .item img {
-        max-width: 400px;
-      }
-
-      .scroll-wrapper {
-        white-space: nowrap;
-        position: absolute;
-      }
-
-      .scroll-wrapper .item a span {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: lightblue;
-        padding: 16px;
-        z-index: 3;
-      }
-
-      .scroll-animation-wrapper {
-        height: 310px;
-        margin-top: 96px;
-      }
-
-      .homepage.section-1{
-        transition: all .4s ease-in-out;
-      }
-    </style>
     <div class="row">
-      <div class="scroll-animation-wrapper">
-        <div class="spacer">
-          <div class="scroll-wrapper">
-            <div class="item"><a href=""><img src="img/01-carousel-img.jpg"><span
-                  class="service-title">Criatividade</span></a></div>
-            <div class="item"><a href=""><img src="img/02-carousel-img.jpg"><span
-                  class="service-title">Marketing</span></a></div>
-            <div class="item"><a href=""><img src="img/03-carousel-img.jpg"><span
-                  class="service-title">Formação</span></a></div>
-            <div class="item"><a href=""><img src="img/04-carousel-img.jpg"><span class="service-title">E-commerce
-                  Performance</span></a></div>
-            <div class="item"><a href=""><img src="img/05-carousel-img.jpg"><span class="service-title">Consultoria &
-                  Estratégia</span></a></div>
-            <div class="item"><a href=""><img src="img/06-carousel-img.jpg"><span class="service-title">Transformação
-                  Digital</span></a></div>
-            <div class="item"><a href=""><img src="img/03-carousel-img.jpg"><span class="service-title">Consumer
-                  Insight</span></a></div>
-            <div class="item"><a href=""><img src="img/05-carousel-img.jpg"><span class="service-title">Inovação em
-                  Tecnologia</span></a></div>
+      <div class="full-width">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 desktop">
+            <div class="carousel-wrapper spacer">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <a href="">
+                    <div class="img-label-container">
+                      <img src="img/01-carousel-img.jpg">
+                      <span class="service-title">Consultoria & Estratégia</span>     
+                    </div>               
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="img-label-container">
+                      <img src="img/02-carousel-img.jpg">
+                      <span class="service-title">Transformação Digital</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="img-label-container">
+                      <img src="img/03-carousel-img.jpg">
+                      <span class="service-title">Consumer Insight</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="img-label-container">
+                      <img src="img/01-carousel-img.jpg">
+                      <span class="service-title">Consultoria & Estratégia</span>     
+                    </div>               
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="img-label-container">
+                      <img src="img/02-carousel-img.jpg">
+                      <span class="service-title">Transformação Digital</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="img-label-container">
+                      <img src="img/03-carousel-img.jpg">
+                      <span class="service-title">Consumer Insight</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+          </div>
           </div>
         </div>
       </div>
@@ -481,7 +481,8 @@
   <script src="https://unpkg.com/scrollama"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/main.js"></script>
-  <script>
+  
+  <!--<script>
     $(document).ready(function () {
       $('.scroll-wrapper').css({
         'right': '-' + $('.scroll-wrapper').width() + 'px',
@@ -522,7 +523,7 @@
         lastScrollTop = $(window).scrollTop();
       });
     });
-  </script>
+  </script>-->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
