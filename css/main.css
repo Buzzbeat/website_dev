@@ -94,6 +94,7 @@ html, body{
 
 body{
   overflow-x: hidden;
+  transition: background 0.4s ease-in-out ;
 }
 
 h1{
@@ -1529,6 +1530,34 @@ p{
   text-decoration: none;
 }
 
+.main-nav ul li.logo-light{
+  margin-left:0;
+}
+
+.dark-nav .logo-dark{
+  display:inline-block;
+}
+
+.dark-nav .logo-light{
+  display:none;
+}
+
+.light-nav .logo-dark{
+  display:none;
+}
+
+.light-nav .logo-light{
+  display:inline-block;
+}
+
+.transparent-nav .logo-dark{
+  display:inline-block!important;
+}
+
+.transparent-nav .logo-light{
+  display:none!important;
+}
+
 /* ==========================================================================
    Main Nav Mobile
    ========================================================================== */
@@ -1787,12 +1816,18 @@ p{
 }
 #slide-0 {
   background-image: url(../img/bg-01.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 #slide-1 {
   background-image: url(../img/bg-01.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 #slide-2 {
   background-image: url(../img/bg-01.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .slide:before {
   content: "";
@@ -1956,12 +1991,10 @@ p{
 
 .homepage.section-3{
   padding:90px 0;
-  background-color:#0F0F0F;
   color:#fff;
 }
 
 .homepage.section-4{
-  background-color:#0F0F0F;
   color:#fff;
   padding-top:90px;
   padding-bottom:170px;
@@ -2673,19 +2706,18 @@ footer a{
 }
 
 .panel .img-fluid{
-  height: 504px;
+  position: absolute;
+  top:0;
+  z-index: 1;
   width: 100%;
+  height: auto;
   object-fit: cover;
   margin-bottom:40px;
 }
 
 .accordion-blue{
-  height: 504px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-color: #00d9d0;
+  padding:100px 0;
   color: #fff;
-  margin-top: 40px;
   display: flex;
   align-content: center;
 }
@@ -2695,8 +2727,13 @@ footer a{
 }
 
 .offset-panel-blue{
-  position: absolute;
-  top: 0;
+  position: relative;
+  z-index: 2;
+  margin-top:40px;
+  background: -moz-linear-gradient(left,  rgba(0,217,208,1) 0%, rgba(0,217,208,1) 66%, rgba(4,216,209,0) 66%, rgba(125,185,232,0) 100%);
+  background: -webkit-linear-gradient(left,  rgba(0,217,208,1) 0%,rgba(0,217,208,1) 66%,rgba(4,216,209,0) 66%,rgba(125,185,232,0) 100%); 
+  background: linear-gradient(to right,  rgba(0,217,208,1) 0%,rgba(0,217,208,1) 66%,rgba(4,216,209,0) 66%,rgba(125,185,232,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d9d0', endColorstr='#007db9e8',GradientType=1 );
 }
 
 .offset-panel-blue p{
@@ -2806,6 +2843,9 @@ footer a{
   left: 0;
 }
 
+.dark-bg{
+  background:#0F0F0F;
+}
 
 /* ==========================================================================
    responsive
@@ -3128,16 +3168,17 @@ footer a{
   .accordion{
     padding: 15px 40px;
   }
-  .offset-panel-blue{
-    position: relative;
-    margin-top:0;
-  }
   .panel .img-fluid{
+    position: relative;
     margin-bottom:0;
   }
+  .offset-panel-blue{
+    margin-top:0;
+  }
   .accordion-blue{
-    padding: 100px 40px;
-    margin: 0;
+    position: relative;
+    padding: 50px 40px;
+    margin-top: 0;
     background-color: #00d9d0;
     color: #fff;
     width: unset;
