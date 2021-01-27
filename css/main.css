@@ -2664,6 +2664,10 @@ footer a{
   display:block!important;
 }
 
+.dark-bg .blog.section-2 a{
+  color:#fff;
+}
+
 .dark-bg .accordion h3{
   color:#fff;
 }

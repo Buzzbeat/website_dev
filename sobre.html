@@ -24,7 +24,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
-  
+  <script>
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = 'YOUR_SMARTSUPP_CODE';
+    window.smartsupp||(function(d) {
+      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+      c.type='text/javascript';c.charset='utf-8';c.async=true;
+      c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+    })(document);
+    </script>
 </head>
 
 <body>
@@ -313,11 +322,11 @@
           <div class="col-lg-1 col-md-1 col-sm-12"></div>
           <div class="col-lg-5 col-md-5 col-sm-12 newsletter anim-delay-4">
             <form>
-              <input class="desktop" type="text" id="newsletter" name="newsletter" placeholder="Insira o seu email e receba conteúdos exclusivos"><br>
+              <input class="desktop" type="text" id="newsletter-desktop" name="newsletter" placeholder="Insira o seu email e receba conteúdos exclusivos"><br>
               <a class="desktop" href=""><div class="btn-send"><img class="btn-arrow" src="img/arrow-right-blue.svg"></div><span></a>
             </form>
             <form">
-              <input class="mobile type="text" id="newsletter" name="newsletter" placeholder="Insira o seu email"><br>
+              <input class="mobile type="text" id="newsletter-mobile" name="newsletter" placeholder="Insira o seu email">
               <a class="mobile btn-blue-ball btn-dark blue-ball-inverted" href="#"><div class="btnball btnball-white"><img class="btn-img" src="img/arrow-right-blue.svg"></div><span>Enviar</span></a>
             </form>
           </div>
