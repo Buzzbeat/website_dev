@@ -2929,35 +2929,34 @@ footer a{
 }
 
 /* tabs */
-
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.tab-container{
+  margin:100px 0;
+  text-align-last: right;
 }
 
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
+.tablink {
+  background-color: transparent;
+  border:none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 10px 15px;
   transition: 0.3s;
+  font-size:20px;
+  font-weight:600;
 }
 
-.tab button:hover {
-  background-color: #ddd;
+.tablink:hover {
+  border-bottom:1px solid #00d9d0;
+  color:#00d9d0;
 }
 
-.tab button.active {
-  background-color: #ccc;
+.tablink.active {
+  border-bottom:1px solid #00d9d0;
+  color:#00d9d0;
 }
 
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
