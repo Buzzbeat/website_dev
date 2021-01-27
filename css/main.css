@@ -2359,6 +2359,7 @@ footer a{
 }
 
 .footer-form{
+  flex: 0 0 auto;
   background-color:#00D9D0;
   color:#fff;
   padding:100px 80px;
@@ -2426,6 +2427,7 @@ footer a{
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  overflow: auto;
 }
 
 .counter, .questions{
