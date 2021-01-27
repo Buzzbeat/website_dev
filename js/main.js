@@ -1,7 +1,3 @@
-$(".menu").click(function(){
-  $(".nav-mobile").toggle();
-});
-
 var clicked = "false";
   
   $('.menu').click(function(e) {
@@ -10,9 +6,11 @@ var clicked = "false";
 
     if (clicked == "false") {
     overflowState = 'hidden';
+    $('.nav-mobile').css('top', '60px');
     clicked = "true";
     } else {
     overflowState = 'auto';
+    $('.nav-mobile').css('top', '-100vh');
     clicked = "false";
     }
     $('html, body').css('overflow', overflowState);

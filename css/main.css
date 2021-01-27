@@ -1567,7 +1567,8 @@ p{
 
 .nav-mobile{
   position: fixed;
-  top: 60px;
+  top: -100vh;
+  transition: 500ms all ease;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1575,9 +1576,8 @@ p{
   width: calc(100% - 40px);
   background-color: #fff;
   padding: 0px 20px;
-  display: none;
-  transition: 500ms all ease;
-  z-index: 99;
+  display: block;
+  z-index: 98;
 }
 
 .nav-mobile ul{
@@ -2354,16 +2354,6 @@ footer a{
   text-decoration:none;
 }
 
-.footer-1 a:hover{
-  text-decoration: underline;
-}
-
-/*
-.footer-1 a:first-child{
-  margin-top:50px;
-}
-*/
-
 .footer-form .subtitle{
   color:#fff;
 }
@@ -2385,6 +2375,9 @@ footer a{
   height: 35px;
   margin: 27px 0;
   padding-left: 10px;
+  padding-bottom:5px;
+  font-size: 24px;
+  line-height: 39px;
 }
 
 .footer-form input:first-child{
@@ -2404,8 +2397,45 @@ footer a{
   color:#fff;
 }
 
+.footer-form input[type="radio"]{
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.footer-form label{
+  display:block;
+  font-size: 12px;
+}
+
+.footer-form label a{
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.footer-form label:nth-child(1){
+  margin-top:70px;
+}
+
 .footer-form .btn-blue-ball{
   margin-top:50px;
+}
+
+.form-slider{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.counter, .questions{
+  margin-top: 50px;
+  font-size:14px;
+  font-weight:400;
+}
+
+.counter span{
+  font-weight:700;
 }
 
 .footer-2{
@@ -2600,6 +2630,10 @@ footer a{
 
 .align-top{
   align-items:flex-start;
+}
+
+.align-right{
+  text-align:right;
 }
 
 .go-right{
