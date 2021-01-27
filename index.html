@@ -428,8 +428,12 @@
           <div class="col-lg-1 col-md-1 col-sm-12"></div>
           <div class="col-lg-5 col-md-5 col-sm-12 newsletter anim-delay-4">
             <form>
-              <input type="text" id="newsletter" name="newsletter" placeholder="Insira o seu email e receba conteúdos exclusivos"><br>
-              <a href=""><div class="btn-send"><img class="btn-arrow" src="img/arrow-right-blue.svg"></div><span></a>
+              <input class="desktop" type="text" id="newsletter" name="newsletter" placeholder="Insira o seu email e receba conteúdos exclusivos"><br>
+              <a class="desktop" href=""><div class="btn-send"><img class="btn-arrow" src="img/arrow-right-blue.svg"></div><span></a>
+            </form>
+            <form">
+              <input class="mobile type="text" id="newsletter" name="newsletter" placeholder="Insira o seu email"><br>
+              <a class="mobile btn-blue-ball btn-dark blue-ball-inverted" href="#"><div class="btnball btnball-white"><img class="btn-img" src="img/arrow-right-blue.svg"></div><span>Enviar</span></a>
             </form>
           </div>
         </div>
@@ -482,49 +486,6 @@
   <script src="https://unpkg.com/scrollama"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/main.js"></script>
-  
-  <!--<script>
-    $(document).ready(function () {
-      $('.scroll-wrapper').css({
-        'right': '-' + $('.scroll-wrapper').width() + 'px',
-      });
-
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 999) {
-          $('.homepage.section-1').css({
-            'position': 'fixed',
-            'top': 0,
-            'left': 0,
-            'height': '4000px',
-            'width': '100vw',
-            'opacity': 1,
-          });
-          $('.homepage.section-2').css('margin-top', '4800px');
-        } else{
-          $('.homepage.section-1').css('position', 'unset');
-        }
-      });
-
-      var $target = $(".scroll-wrapper").first(),
-        currentPosition = 0,
-        moveBy = function (scrolledBy) {
-          currentPosition += scrolledBy;
-          $target.css("transform", "translateX(" + (currentPosition) + "px)");
-          if(currentPosition < -4890){
-            $('.homepage.section-1').css('opacity', 0);
-          }
-        },
-        lastScrollTop = 0;
-
-      $(window).bind("scroll", function (e) {
-        var scrolledBy = $(window).scrollTop() - lastScrollTop;
-        moveBy(-scrolledBy);
-        lastScrollTop = $(window).scrollTop();
-      });
-    });
-  </script>-->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

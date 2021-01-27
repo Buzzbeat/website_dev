@@ -95,7 +95,7 @@ html, body{
 body{
   overflow-x: hidden;
   color:#1F1F1F;
-  transition: background 0.4s ease-in-out ;
+  transition: background .6s cubic-bezier(.36,.58,.74,.52);
 }
 
 h1{
@@ -1463,13 +1463,13 @@ p{
 
 .nav-bar{
   height:75px;
-  transition: 500ms all ease;
+  transition: background .6s cubic-bezier(.36,.58,.74,.52);
 }
 
 .light-nav{
   height:75px;
   background-color:#fff;
-  transition: 500ms all ease;
+  transition: background .6s cubic-bezier(.36,.58,.74,.52);
 }
 
 .light-nav .main-nav ul li a{
@@ -1996,6 +1996,10 @@ p{
 
 .homepage.section-2{
   padding:100px 0;
+}
+
+.homepage.section-2 .video-banner-wrap{
+  margin-bottom:100px;
 }
 
 .homepage.section-3{
@@ -2660,6 +2664,18 @@ footer a{
   display:block!important;
 }
 
+.dark-bg .accordion h3{
+  color:#fff;
+}
+
+.dark-bg .accordion .circle-plus{
+  background-color:#fff;
+}
+
+.dark-bg .accordion .circle-plus img{
+  filter: invert(1);
+}
+
 .accordion{
   max-width: 1330px;
   margin: 0 auto;
@@ -2668,7 +2684,7 @@ footer a{
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background-color:#fff;
+  background-color:transparent;
   border-top: 1px solid #999;
   border-left:0;
   border-right:0;
@@ -3103,7 +3119,7 @@ footer a{
     height:200px;
   }
   .homepage.section-2 .video-banner-wrap{
-    padding-bottom:80px;
+    margin-bottom:80px;
   }
   .homepage.section-2 .spacer{
     padding-top:60px;
@@ -3164,12 +3180,17 @@ footer a{
   .newsletter input, .newsletter a{
     float:none;
   }
+  .newsletter a{
+    margin-left:0;
+  }
   .newsletter form{
     display: block;
   }
   .footer-2 input{
-    width: calc(100% - 40px);
-    margin-bottom:10px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 0px;
   }
   .grey-footer{
     text-align: left;
