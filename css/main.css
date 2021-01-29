@@ -2427,7 +2427,7 @@ footer a{
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .counter, .questions{
