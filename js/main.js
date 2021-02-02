@@ -34,7 +34,6 @@ $(window).scroll(function(){
   else sticky.removeClass('sticky-bar');
 });
 
-
 /*
 var slider = {
   
@@ -178,7 +177,19 @@ function scrollFn() {
 };
 $(window).on('scroll', scrollFn);
 
+$('#continue').click(function(e) {
+  e.preventDefault(); 
+  let name = $('#name').val();
+  let email = $('#email').val();
+  if(name !== '' && email !== ''){
+    $('.form-slider-wrapper').css('transform', 'translateX(-620px)');
+  };
+});
 
-
-
-
+$('#send').click(function(e) {
+  e.preventDefault(); 
+  let empresa = $('#empresa').val();
+  if(empresa !== ''){
+    $('.form-slider-wrapper').css('transform', 'translateX(-620px)');
+  };
+});
