@@ -1830,7 +1830,7 @@ p{
   left: 0;
   overflow: hidden;
   z-index: -100;
-  filter: brightness(0.6);
+  filter: brightness(0.75);
 }
 
 .fullscreen-bg__video {
