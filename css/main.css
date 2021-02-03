@@ -2459,7 +2459,12 @@ footer a{
 }
 
 .footer-form .btn-blue-ball{
+  cursor: pointer;
   margin-top:50px;
+}
+
+#colaboradores{
+  margin-bottom:70px;
 }
 
 .form-slider{
@@ -3064,11 +3069,19 @@ footer a{
 }
 
 @media (max-width: 1420px) {
-
   .scroll-guide{
     bottom:40%;
   }
+}
 
+@media (max-width: 1024px) {
+  .footer-form h2{
+    font-size:30px;
+    line-height: 50px;
+  }
+  .footer-form input{
+    font-size:20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3239,13 +3252,32 @@ footer a{
     font-weight:400;
   }
   .footer-form{
-    margin-left: -20px;
-    margin-right: -20px;
     margin-bottom: 60px;
-    padding:60px 20px; 
+    width: calc(100% - 40px);
+    padding: 60px 20px;
   }
   .footer-form input{
     width: 100%;
+    font-size:20px;
+    margin: 17px 0;
+  }
+  .footer-form h2{
+    font-size:30px;
+    line-height: 50px;
+    margin-bottom:60px;
+  }
+  .footer-form form{
+    overflow: hidden;
+  }
+  #colaboradores{
+    margin-bottom:30px;
+  }
+  .footer.form .align-right{
+    text-align:center;
+  }
+  .counter, .questions{
+    margin-top:35px;
+    text-align: center;
   }
   .padding-left{
     padding-left:0;
@@ -3466,6 +3498,10 @@ footer a{
   }
   .tablink{
     font-size:12px;
+  }
+  .form-slider{
+    margin-left:-20px;
+    margin-right:-20px;
   }
 }
 

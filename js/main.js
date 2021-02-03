@@ -182,7 +182,7 @@ $('#continue').click(function(e) {
   let name = $('#name').val();
   let email = $('#email').val();
   if(name !== '' && email !== ''){
-    $('.form-slider-wrapper').css('transform', 'translateX(-620px)');
+    $('.form-slider-wrapper').css('transform', 'translateX(-' + $($('.footer-form')[0]).outerWidth() + 'px)');
   };
 });
 
@@ -190,6 +190,6 @@ $('#send').click(function(e) {
   e.preventDefault(); 
   let empresa = $('#empresa').val();
   if(empresa !== ''){
-    $('.form-slider-wrapper').css('transform', 'translateX(-620px)');
+    $('.form-slider-wrapper').css('transform', `translateX(-${$($('.footer-form')[0]).outerWidth() * 2}px)`);
   };
 });
