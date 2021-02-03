@@ -177,19 +177,62 @@ function scrollFn() {
 };
 $(window).on('scroll', scrollFn);
 
-$('#continue').click(function(e) {
-  e.preventDefault(); 
-  let name = $('#name').val();
-  let email = $('#email').val();
-  if(name !== '' && email !== ''){
+
+function firstValidation() {
+    $('.error').hide();
+    var name = $('#name').val();
+    var email = $('#email').val();
+
+    if(name== ''){
+      $('#name').next().next().show();
+      return false;
+    }
+    if(email== ''){
+      $('#email').next().next().show();
+      return false;
+    }
+    if(IsEmail(email)==false){
+      $('#invalid_email').show();
+      return false;
+    }   
+  return true;
+};
+  function IsEmail(email) {
+  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if(!regex.test(email)) {
+    return false;
+  }else{
+    return true;
+  }
+}
+
+function secondValidation() {
+  $('.error').hide();
+  var empresa = $('#empresa').val();
+
+  if(empresa == ''){
+    $('#empresa').next().next().show();
+    return false;
+  }
+  return true;
+};
+
+$('#continue').click(function() {
+  if (firstValidation()){
     $('.form-slider-wrapper').css('transform', 'translateX(-' + $($('.footer-form')[0]).outerWidth() + 'px)');
-  };
+  }
 });
 
-$('#send').click(function(e) {
-  e.preventDefault(); 
-  let empresa = $('#empresa').val();
-  if(empresa !== ''){
-    $('.form-slider-wrapper').css('transform', `translateX(-${$($('.footer-form')[0]).outerWidth() * 2}px)`);
-  };
+$('#send').click(function() {
+  if (secondValidation()){
+    $('.form-slider-wrapper').css('transform', 'translateX(-' + $($('.footer-form')[0]).outerWidth() * 2 + 'px)');
+  }
 });
+
+$('#return').click(function() {
+  $('.form-slider-wrapper').css('transform', 'translateX(+' + $($('.footer-form')[0]).outerWidth() * 0 + 'px)');
+});
+
+
+
+

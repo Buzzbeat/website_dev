@@ -1491,7 +1491,6 @@ p{
 
 .relative-tabs{
   position: relative;
-  margin: 100px 0;
 }
 
 .nav-bar{
@@ -2090,7 +2089,7 @@ p{
 }
 
 .services.section-1{
-  padding-bottom:30px;
+  padding-bottom:130px;
 }
 
 .services.section-2{
@@ -2461,6 +2460,12 @@ footer a{
 .footer-form .btn-blue-ball{
   cursor: pointer;
   margin-top:50px;
+}
+
+.error{
+  display:none;
+  font-size: 12px;
+  padding-left: 15px;
 }
 
 #colaboradores{
@@ -3004,6 +3009,7 @@ footer a{
 }
 
 .tabcontent {
+  padding-top:100px;
   display: none;
   border-top: none;
 }
@@ -3489,9 +3495,6 @@ footer a{
   }
   .btn-blue-ball{
     display:flex;
-  }
-  .relative-tabs{
-    margin:35px 0;
   }
   .sticky-tabs{
     top:60px;
