@@ -900,7 +900,6 @@
       });
 
       $(document).ready(function() {
-      if($(window).width() > 999) {
       $(document).scroll(function () {
           if ($(document).scrollTop() >= ($("#sticky-container").offset().top - 90)){
               console.log(jQuery(document).scrollTop());
@@ -909,7 +908,6 @@
             $('.tab-container').addClass('relative-tabs').removeClass('sticky-tabs');
               }
           });
-      }
       });
 
     $(".tablink").click(function() {

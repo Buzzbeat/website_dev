@@ -2833,7 +2833,7 @@ footer a{
   top:0;
   z-index: 1;
   width: 100%;
-  height: auto;
+  max-height: 504px;
   object-fit: cover;
   margin-bottom:40px;
 }
@@ -3444,6 +3444,24 @@ footer a{
   .newsletter-mobile .btnball span{
     display:none;
   }
+  .sticky-tabs .tabs{
+    width: calc(100% - 30px);
+  }
+  .contact .btn{
+    width:calc(100% - 65px);
+    display:block;
+    text-align:center;
+  }
+  .footer-1 .btn-blue-ball.btn-dark {
+    margin-top: 20px;
+    margin-bottom: 65px;
+  }
+  .contact.section-2{
+    padding-bottom: 90px;
+  }
+  .blogpost.section-2{
+    padding-bottom:0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3528,6 +3546,10 @@ footer a{
   }
   .newsletter input, .newsletter a{
     float:none;
+  }
+  .accordion h3{
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
