@@ -2638,6 +2638,10 @@ footer a{
   height: auto;
 }
 
+.img-grid a{
+  text-decoration:none;
+}
+
 .img-grid a:hover .img-container span{
   text-decoration: underline;
 }
@@ -2839,6 +2843,7 @@ footer a{
 }
 
 .accordion-blue{
+  min-height:504px;
   padding:100px 0;
   color: #fff;
   display: flex;
@@ -3462,6 +3467,9 @@ footer a{
   .blogpost.section-2{
     padding-bottom:0;
   }
+  .accordion-blue{
+    min-height:300px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3550,6 +3558,13 @@ footer a{
   .accordion h3{
     font-size: 18px;
     line-height: 30px;
+  }
+  .img-container span{
+    font-size:16px;
+  }
+  .services.section-2 ul li a{
+    line-height: 36px;
+    font-size: 13px;
   }
 }
 
